@@ -1,0 +1,431 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="icon" href="images/icons/titleIcon.png">
+    <title>Улыбка</title>
+</head>
+<body>
+
+
+    <header class="header" id="headerAnchor">
+        <div class="container">
+            <div class="header__inner">
+
+                <div class="header-top">
+                    <div class="logo">
+                        <a class="logo__link" href="#headerAnchor">
+                            <img class="logo__img" src="images/headerImg/logoHeader.svg" alt="title img">
+                        </a>
+                        <div class="logo__text">Улыбка</div>
+                    </div>
+
+                    <nav class="menu">
+                        <ul class="menu__items" id="menuItems">
+                            <li class="menu__item"><a class="menu__link" href="#headerAnchor">Главная</a></li>
+                            <li class="menu__item"><a class="menu__link" href="#servicesAnchor">Наши услуги</a></li>
+                            <li class="menu__item"><a class="menu__link" href="#promotionAnchor">Акции</a></li>
+                            <li class="menu__item"><a class="menu__link" href="#feedbackAnchor">Отзывы</a></li>
+                            <li class="menu__item"><a class="menu__link" href="#aboutAnchor">О нас</a></li>
+                        </ul>
+                    </nav>
+
+                    <div class="hamb">
+                        <div class="hamb__field" id="hamb">
+                            <span class="bar"></span>
+                            <span class="bar"></span>
+                            <span class="bar"></span>
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <div class="header-main">
+                    <div class="header-main__info">
+                        <h1 class="header-main__title">Стоматологическая клиника “Улыбка”</h1>
+                        <div class="header-main__descr">
+                            Добро пожаловать на официальный сайт сети стоматологических клиник “Улыбка”.
+                            Мы оказываем полный спектр стоматологических услуг - от чистки и лечения
+                            зубов, до исправления прикуса и установки имплантатов.
+                        </div>
+                        <button class="header-main__btn">Записаться на прием</button>
+                    </div>
+
+                    <div class="header-main__images">
+                        <img class="tooth" src="images/headerImg/toothHappy.png" alt="tooth">
+                        <img class="star" src="images/headerImg/star.png" alt="">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </header>
+
+
+    <div class="popupHumb" id="popupHumb">
+
+    </div>
+
+
+    <div id="scrollUpBtn">
+        <a id="scrollUpBtn-link" href="#headerAnchor"><img id="scrollUpBtn-img" src="images/icons/arrowUp.png" alt=""></a>
+    </div>
+
+
+    <div class="popup">
+        <form id="popupForm" class="popup__form" method="POST">
+            <img class="popup__close" src="images/icons/close.svg" alt="">
+
+            <label class="label">
+                <input placeholder="Как к вам обращаться" type="text" name="user_name" required>
+            </label>
+
+            <label class="label">
+                <input id="tel" placeholder="Телефон для связи" type="tel"  name="user_phone" required>
+            </label>
+
+            <label class="label">
+                <input placeholder="Почта для связи" type="email" name="user_email" required>
+            </label>
+
+            <label class="label">
+                <textarea class="textar" placeholder="Сообщение" name="user_message"></textarea>
+            </label>
+
+
+            <div class="preReg">
+                Запись через сайт является предварительной. Наш сотрудник свяжется с вами в ближайшее время для подтверждение записи на прием.
+            </div>
+
+            <label class="label__agree">
+                <input class="userAgreement" type="checkbox" name="agree" required>
+                Нажимая кнопку, я принимаю условия <a class="privacyBtn" href="#">Пользовательского
+                соглашения</a> и даю своё согласие на обработку моих персональных данных
+            </label>
+
+            <div class="privacy">
+                <p>Обработка персональных данных Оператором ведется смешанным способом, т.е. происходит как, с использованием средств автоматизации, так и без таковых.</p><p>Осуществляются следующие действия с персональными данными: сбор, запись, систематизация, накопление, хранение, уточнение (обновление, изменение), извлечение, использование, передача, предоставление, доступ), обезличивание, блокирование, удаление, уничтожение персональных данных.</p><p>При обработке обеспечиваются точность, достаточность и актуальность персональных данных по отношению к целям их обработки. При обнаружении неточных или неполных персональных данных производится их актуализация.</p><p>Получение и обработка персональных данных в случаях, предусмотренных ФЗ-152, осуществляется Оператором с письменного согласия субъекта персональных данных. Равнозначным согласию в письменной форме на бумажном носителе, содержащему собственноручную подпись субъекта персональных данных, признается согласие в форме электронного документа, подписанного квалифицированной электронной подписью.</p><p>Согласие на обработку персональных данных может быть дано субъектом персональных данных или его представителем в любой позволяющей подтвердить факт его получения форме, если иное не установлено ФЗ-152.</p><p>Обработка специальных категорий персональных данных, касающихся расовой, национальной принадлежности, политических взглядов, религиозных или философских убеждений, интимной жизни, Оператором не осуществляется.</p><p>Сведения, которые характеризуют физиологические особенности человека и на основе которых можно установить его личность (биометрические персональные данные), могут обрабатываться только при наличии согласия в письменной форме субъекта персональных данных.</p><p>Обработка и хранение персональных данных осуществляются не дольше, чем этого требуют цели обработки персональных данных, если отсутствуют законные основания для дальнейшей обработки.</p>
+            </div>
+
+            <button class="popup__button" type="submit" name="sendClick">Отправить</button>
+            <div class="popup__button-back">
+                <div class="popup__button-backText">
+                    Вы успешно записались <br> вернуться на главный экран
+                </div>
+            </div>
+        </form>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <section class="services" id="servicesAnchor">
+        <div class="container">
+            <div class="services__title">Наши услуги</div>
+
+            <div class="services__items">
+
+                <div class="services__item">
+                    <img class="services__item-img" src="images/servicesImg/bracket.svg" alt="">
+                    <div class="services__item-title">Установка брекетов</div>
+                    <div class="services__item-text">
+                        Брекет-системой - это ортодонтические несъемные устройства. Их устанавливают на
+                        наружную или внутреннюю сторону зубного ряда, для выравнивания зубов,
+                        исправления прикуса и
+                        устранения прочих дефектов.
+                    </div>
+                </div>
+
+
+                <div class="services__item">
+                    <img class="services__item-img" src="images/servicesImg/implant.svg" alt="">
+                    <div class="services__item-title">Имплантация</div>
+                    <div class="services__item-text">
+                        Имплантация — самый современный и высокотехнологичный метод в стоматологии,
+                        который позволяет вживить имплант в костную ткань (челюсть), позволяя заменить
+                        потерянные корни зуба и
+                        восстановить зубной ряд. Данная методика — основной способ восстановления
+                        утраченных зубов.
+                    </div>
+                </div>
+
+
+                <div class="services__item">
+                    <img class="services__item-img" src="images/servicesImg/vineer.svg" alt="">
+                    <div class="services__item-title">Лечение кариеса</div>
+                    <div class="services__item-text">
+                        Кариес – разрушительный процесс, протекающий в твердых тканях зубов (дентин с
+                        полостью, покрытый снаружи эмалью и цементом). Начало заболевания затрагивает
+                        внешнюю защитную
+                        оболочку коронки зуба – эмаль. Происходит деминерализация эмали. При отсутствии
+                        должного лечения
+                        деструкция
+                    </div>
+                </div>
+
+
+                <div class="services__item">
+                    <img class="services__item-img" src="images/servicesImg/toothLoosen.svg" alt="">
+                    <div class="services__item-title">Удаление зубов</div>
+                    <div class="services__item-text">
+                        Иногда мы доводим зубы до такого состояния, что сохранить их не получается. И
+                        тогда приходится зубы удалять.
+                        Специалисты нашей клиники помогут избавиться от плохих зубов совершенно без
+                        боли, мук и страдний.
+                    </div>
+                </div>
+
+
+                <div class="services__item">
+                    <img class="services__item-img" src="images/servicesImg/cavity.svg" alt="">
+                    <div class="services__item-title">Лечение пульпитов</div>
+                    <div class="services__item-text">
+                        Пульпа находится внутри зубного канала и содержит нерв, сосуды, клетки
+                        соединительной ткани и обеспечивает питание твердых тканей зуба изнутри.
+                    </div>
+                </div>
+
+
+
+                <div class="services__item">
+                    <img class="services__item-img" src="images/servicesImg/beauty.svg" alt="">
+                    <div class="services__item-title">Отбеливание зубов</div>
+                    <div class="services__item-text">
+                        Только небольшое количество людей обладает белой улыбкой от природы. Остальным
+                        приходится обращаться к стоматологам. Отбеливание зубов в наших клиниках
+                        проводится разными методами без риска для здоровья и очень быстро
+                    </div>
+                </div>
+
+
+
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+    <section class="promotion" id="promotionAnchor">
+        <div class="container">
+            <div class="promotion__inner">
+
+                    <div class="promotion__title">Наши Акции</div>
+
+                    <div class="promotion__slider">
+
+                    <div class="promotion__slider-text" id="promotion__slider-text">Рассрочка на лечение</div>
+                        <div class="promotion__slider-item">
+<!--                            <div class="promotion__slider-descr" id="promotion__slider-descr">-->
+<!--                                Без первого взноса и переплат. Без справки с работы. 15 минут на оформление анкеты. Каждый месяц Вы выплачиваете небольшую фиксированную сумму, при этом первоначальная стоимость лечения не меняется-->
+<!--                            </div>-->
+                            <img class="promotion__slider-imgCss" id="promotion__slider-img" src="images/promotionImg/rasrochka.png" alt="">
+
+
+                            <div class="promotion__slider-buttons">
+                                <button class="promotion__slider-leftButton" id="promotion__slider-leftbtn">
+                                    <img src="images/promotionImg/arrowLeft.svg" alt="">
+                                </button>
+                                <button class="promotion__slider-rightButton" id="promotion__slider-rightbtn">
+                                    <img src="images/promotionImg/arrowRight.svg" alt="">
+                                </button>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <section class="about" id="aboutAnchor">
+        <div class="container">
+            <div class="about__inner">
+                <div class="about__title">О нас</div>
+                <div class="about__items">
+                    <div class="about__item">
+                        <img class="about__item-image" src="images/aboutImg/rate.jpg" alt="">
+                        <div class="about__item-title">Команда и цель</div>
+                        <div class="about__item-subtitle">
+                            Наша команда это - специалисты высокой кфалификации, целью
+                            которых является предоставление высокого уровня услуг.
+                        </div>
+                    </div>
+                    <div class="about__item">
+                        <img class="about__item-image" src="images/aboutImg/technology.jpg" alt="">
+                        <div class="about__item-title">Технологии</div>
+                        <div class="about__item-subtitle">
+                            Мы применяем самые новые
+                            технологии в нашей стоматологической клинике.
+                        </div>
+                    </div>
+                    <div class="about__item">
+                        <img class="about__item-image" src="images/aboutImg/dental.jpg" alt="">
+                        <div class="about__item-title">Рейтинг</div>
+                        <div class="about__item-subtitle">
+                            Стоматологическая клиника “Улыбка” - одна из самых лучших стоматологий в России
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+  <section class="feedback" id="feedbackAnchor">
+      <div class="container">
+          <div class="feeedback__inner">
+              <div class="feedback__slider">
+                    <div class="feedback__title">Отзывы наших клиентов</div>
+
+                    <div class="feedback__blocks">
+                        <div class="feedback__user">
+                            <img class="feedback__user-img" id="feedback__user-img" src="images/feedbackImg/elnur.jpg" alt="">
+                            <div class="feedback__userInfo">
+                                <div class="feedback__name" id="feedback__name">Эльнур Азизов</div>
+                                <div class="feedback__service" id="feedback__service">Вылечил кариес</div>
+                            </div>
+                        </div>
+
+                        <div class="feedback__comment" id="feedback__comment">Хочу поблагодарить врачей клиники за их отличную работу! Вылечили кариес корня быстро и без проблем!</div>
+
+
+
+                        <button class="feedback__buttons-left" id="feedback__buttons-left">
+                            <img class="feedback__buttons-leftImg" src="images/feedbackImg/leftArrow.svg" alt="">
+                        </button>
+                        <button class="feedback__buttons-right" id="feedback__buttons-right">
+                            <img class="feedback__buttons-rightImg" src="images/feedbackImg/rigthArrow.svg" alt="">
+                        </button>
+
+
+
+                    </div>
+
+
+              </div>
+          </div>
+      </div>
+  </section>
+
+
+
+
+    <section class="map" id="mapAnchor">
+        <div class="container">
+            <div class="map__inner">
+                <div class="map__title">мы на карте</div>
+                <div class="map__location">
+                    <iframe class="map__action" src="https://yandex.ru/map-widget/v1/?um=constructor%3Ab2420d90ae6a09b0407496dda48c1578a6ecc559963244a4c2ae638e4ff9fbe0&amp;source=constructor"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+    <footer class="footer">
+        <div class="container">
+            <div class="foooter__inner">
+                <div class="footer__information">
+
+                    <div class="footer__company">
+                        <div class="footer__logo">
+                            <img class="footer__logo-img" src="images/footerImg/logo-footer.svg" alt="">
+                            <a class="footer__logo-name" href="#headerAnchor">Улыбка</a>
+                        </div>
+                        <div class="footer__company-subtitle">Улыбка  предоставляет прогрессивную, и качественную заботу о вашем здоровье, соответствуя наивысшим ожиданиям наших клиентов</div>
+                        <div class="footer__company-rights">©Улыбка 2022. Все права защищены</div>
+                    </div>
+
+                    <div class="footer__services">
+                        <div class="footer__services-title"><a class="footer__services-menu" href="#headerAnchor">Меню</a></div>
+                        <div class="footer__services-options"><a class="footer__services-link" href="#headerAnchor">Главная</a></div>
+                        <div class="footer__services-options"><a class="footer__services-link" href="#servicesAnchor">Услуги</a></div>
+                        <div class="footer__services-options"><a class="footer__services-link" href="#promotionAnchor">Акции</a></div>
+                        <div class="footer__services-options"><a class="footer__services-link" href="#aboutAnchor">О нас</a></div>
+                        <div class="footer__services-options"><a class="footer__services-link" href="#feedbackAnchor">Отзывы</a></div>
+                    </div>
+
+                    <div class="footer__city">
+                        <div class="footer__city-title"><a class="footer__city-link" href="#mapAnchor">Город</a></div>
+                        <div class="footer__city-options"><a class="footer__city-link" href="#mapAnchor">Ростов-на-Дону</a></div>
+                    </div>
+
+                    <div class="footer__help">
+                        <div class="footer__help-title"><a class="footer__help-link" href="#">Обратная связь</a></div>
+                        <div class="footer__help-options"><a class="footer__help-link" href="tel:+79227600000">+7(922)760-00-00</a></div>
+                        <div class="footer__help-options"><a class="footer__help-link" href="mailto:ulyibka.el@mail.ru">Написать</a></div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/inputmask.min.js"></script>
+    <script src="js/promotionSlider.js"></script>
+    <script src="js/feedbackSlider.js"></script>
+    <script src="js/smoothScrolling.js"></script>
+    <script src="js/popup.js"></script>
+    <script src="js/adaptive.js"></script>
+    <script src="js/ajaxForm.js"></script>
+    <script src="js/scrollUpArrow.js"></script>
+    <script src="js/validationForm.js"></script>
+    <script src="js/privacyPolicy.js"></script>
+
+</body>
+</html>
